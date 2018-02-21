@@ -1,7 +1,7 @@
 {
-  "name": "node-hapi-airbrake",
+  "name": "node-hapi-airbrake-js",
   "version": "0.0.7",
-  "description": "Hapi plugin wrapper for node-airbrake",
+  "description": "Hapi plugin wrapper for node-airbrake-js",
   "main": "lib",
   "scripts": {
     "lint": "standard",
@@ -9,9 +9,9 @@
   },
   "author": "",
   "license": "ISC",
-  "repository": "git://github.com/environmentagency/node-hapi-airbrake",
+  "repository": "git://github.com/DEFRA/node-hapi-airbrake-js",
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=8.0.0"
   },
   "dependencies": {
     "airbrake-js": "^1.0.5",
