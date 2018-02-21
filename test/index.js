@@ -18,7 +18,6 @@ lab.experiment('hapi airbrake plugin', () => {
         env: 'production'
       }
     }
-
     const server = new Hapi.Server()
     server.register(plugin, (err) => {
       expect(err).to.not.exist()
@@ -59,7 +58,7 @@ lab.experiment('hapi airbrake plugin', () => {
       expect(server.methods.notify).to.be.a.function()
       server.methods.notify(new Error('test error'), (err) => {
         expect(err).to.exist()
-        expect(err.code).to.equal('ENOTFOUND')
+        expect(err.toString()).to.match(/Invalid URI/)
         done()
       })
     })
