@@ -1,6 +1,6 @@
 {
   "name": "node-hapi-airbrake-js",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Hapi plugin wrapper for node-airbrake-js",
   "main": "lib",
   "scripts": {
